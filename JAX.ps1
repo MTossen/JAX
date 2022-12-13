@@ -9,15 +9,16 @@ The script is designed to be a multi-tool for Active Directory.
 It includes the following features; 
 
 Copy AD-membership from User A to User B
-Export all users AD-permissions - https://github.com/MTossen/ActiveDirectory/blob/main/ADPermissions.ps1
-Users locked in AD and what device locked it - https://github.com/MTossen/ActiveDirectory/blob/main/ADUserLocked.ps1
-ADAnalyzer - https://github.com/MTossen/ADAnalyzer/blob/main/!ReadMe.txt
+Export all users AD-permissions / https://github.com/MTossen/ActiveDirectory/blob/main/ADPermissions.ps1
+Users locked in AD and what device locked it / https://github.com/MTossen/ActiveDirectory/blob/main/ADUserLocked.ps1
+ADAnalyzer / https://github.com/MTossen/ADAnalyzer/blob/main/!ReadMe.txt
 
 
 To use the script, type one of the numbers corresponding to the tool; 1, 2, 3, 4 or 0 for exit.
 #>
 
-
+Function Start-JAX {
+CLS    
 $Function = Read-Host "
 
 Enter"1" - Copy Permissions from User A to User B
@@ -26,7 +27,6 @@ Enter "3" - Show a list of users locked by Active Directory
 Enter "4" - Start a Active Directory Analysis
 Enter "0" - Exit
 "
-
 
 If ($Function -EQ "1")
 {
@@ -46,6 +46,8 @@ Write-Host "
     ###########################################################################
     " -ForegroundColor Green
 
+    Write-Host "Type"Start-Jax" to begin the script." -ForegroundColor Yellow
+    
 }
 
 If ($Function -EQ "2")
@@ -61,7 +63,7 @@ If ($Function -EQ "2")
     Get-ADGroup -filter * -Properties SamAccountname, Description | Select SamAccountname, Description | 
     Export-csv C:\Users\$ENV:Username\Desktop\ADGroups.csv -NoTypeInformation -Encoding UTF8
     cls
-    Write-Host "Starting Export.. It is estimated to take about 15 minutes to complete. Grab a coffee :-)" -ForegroundColor Green
+    Write-Host "Starting Export.. The script is estimated to take about 30 minutes to complete." -ForegroundColor Green
     $ErrorActionPreference = 'silentlycontinue'
     
     $csv = Import-csv C:\Users\$ENV:Username\Desktop\ADGroups.csv 
@@ -94,6 +96,8 @@ If ($Function -EQ "2")
         #                                                                         #
         ###########################################################################
         " -ForegroundColor Green
+  
+        Write-Host "Type"Start-Jax" to begin the script." -ForegroundColor Yellow
 
 }
 
@@ -124,7 +128,8 @@ If ($Function -EQ "3")
     " -ForegroundColor Yellow
     }
     }
-
+     
+    Write-Host "Type"Start-Jax" to begin the script." -ForegroundColor Yellow
 
 }
 
@@ -690,8 +695,9 @@ If ($Function -EQ "4")
     #                                                                         #
     ###########################################################################
     " -ForegroundColor Green
-
-
+    
+    Write-Host "Type"Start-Jax" to begin the script." -ForegroundColor Yellow
+     
 }
 
 
@@ -701,4 +707,6 @@ If ($Function -EQ "0")
 Exit
 
 }
+}
 
+Start-JAX
