@@ -46,7 +46,7 @@ Write-Host "
     ###########################################################################
     " -ForegroundColor Green
 
-    Write-Host "Type"Start-Jax" to begin the script." -ForegroundColor Yellow
+    Write-Host "Type"Start-Jax" to get back to the menu." -ForegroundColor Yellow
     
 }
 
@@ -97,7 +97,7 @@ If ($Function -EQ "2")
         ###########################################################################
         " -ForegroundColor Green
   
-        Write-Host "Type"Start-Jax" to begin the script." -ForegroundColor Yellow
+        Write-Host "Type"Start-Jax" to get back to the menu." -ForegroundColor Yellow
 
 }
 
@@ -129,7 +129,7 @@ If ($Function -EQ "3")
     }
     }
      
-    Write-Host "Type"Start-Jax" to begin the script." -ForegroundColor Yellow
+    Write-Host "Type"Start-Jax" to get back to the menu." -ForegroundColor Yellow
 
 }
 
@@ -696,7 +696,7 @@ If ($Function -EQ "4")
     ###########################################################################
     " -ForegroundColor Green
     
-    Write-Host "Type"Start-Jax" to begin the script." -ForegroundColor Yellow
+    Write-Host "Type"Start-Jax" to get back to the menu." -ForegroundColor Yellow
      
 }
 
