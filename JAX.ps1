@@ -9,9 +9,9 @@ The script is designed to be a multi-tool for Active Directory.
 It includes the following features; 
 
 Copy AD-membership from User A to User B
-Export all users AD-permissions / https://github.com/MTossen/ActiveDirectory/blob/main/ADPermissions.ps1
-Users locked in AD and what device locked it / https://github.com/MTossen/ActiveDirectory/blob/main/ADUserLocked.ps1
-ADAnalyzer / https://github.com/MTossen/ADAnalyzer/blob/main/!ReadMe.txt
+Export all users AD-permissions - https://github.com/MTossen/ActiveDirectory/blob/main/ADPermissions.ps1
+Users locked in AD and what device locked it - https://github.com/MTossen/ActiveDirectory/blob/main/ADUserLocked.ps1
+ADAnalyzer - https://github.com/MTossen/ADAnalyzer/blob/main/!ReadMe.txt
 
 
 To use the script, type one of the numbers corresponding to the tool; 1, 2, 3, 4 or 0 for exit.
