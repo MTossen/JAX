@@ -61,7 +61,7 @@ If ($Function -EQ "2")
     Get-ADGroup -filter * -Properties SamAccountname, Description | Select SamAccountname, Description | 
     Export-csv C:\Users\$ENV:Username\Desktop\ADGroups.csv -NoTypeInformation -Encoding UTF8
     cls
-    Write-Host "Starting Export.. The script is estimated to take about 30 minutes to complete." -ForegroundColor Green
+    Write-Host "Starting Export.. It is estimated to take about 15 minutes to complete. Grab a coffee :-)" -ForegroundColor Green
     $ErrorActionPreference = 'silentlycontinue'
     
     $csv = Import-csv C:\Users\$ENV:Username\Desktop\ADGroups.csv 
