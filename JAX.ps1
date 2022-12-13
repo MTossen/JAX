@@ -20,9 +20,9 @@ To use the script, type one of the numbers corresponding to the tool; 1, 2, 3, 4
 
 $Function = Read-Host "
 
-Enter "1" - Copy Permissions from User A to User B
-Enter "2" - create a .csv-file with all users AD-permissions
-Enter "3" - show a list of users locked by Active Directory
+Enter"1" - Copy Permissions from User A to User B
+Enter "2" - Create a .csv-file with all users AD-permissions
+Enter "3" - Show a list of users locked by Active Directory
 Enter "4" - Start a Active Directory Analysis
 Enter "0" - Exit
 "
